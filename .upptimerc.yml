@@ -8,7 +8,9 @@ sites:
     url: https://api.marzy.com/health
 
 status-website:
-  cname: status.marzy.com
+  # served by the marzy-site worker at status.marzy.com; this Pages build
+  # is the data backend + fallback only
+  baseUrl: /status
   name: Marzy Status
   introTitle: "**Marzy** system status"
   introMessage: Live uptime and response times for the Marzy application and API, checked every 5 minutes.
